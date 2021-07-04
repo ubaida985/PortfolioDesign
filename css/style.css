@@ -63,7 +63,7 @@ header #header{
     height: 5rem;
     z-index: 99;
 }
-#header.scrolled{
+.scrolled{
     background-color: var(--themeDark);
 }
 #header #navToggle{
@@ -72,6 +72,7 @@ header #header{
     font-size: 1.7rem;
     padding: 1rem;
     text-align: right;
+    cursor: pointer;
     color: white;
 }
 #header a{
@@ -84,8 +85,7 @@ header #header{
     width: 70%;
 }
 #headerNav{
-    margin-top: 5rem;
-    background-color: var(--themeDark);
+    margin-top: 5rem;   
     padding-bottom: 1rem;
     width: 24rem;
     height: 100vh;
@@ -102,9 +102,8 @@ header #header{
     background-color: rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
 }
-#headerNav.open{
-    transform: translateX(0);
-    display: block;
+.open{
+    transform: translateX(0)!important;
 }
 /*HEADER SECTION ENDS*/
 
@@ -786,10 +785,5 @@ header #header{
     }
     #blog .interactions{
         padding: 0.5rem 0.2rem;
-        background-color: var(--light);
-    }
-    #contact form{
-        width: 35rem;
-        margin:auto;
     }
 }
