@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'IBM Plex Serif', serif;
@@ -565,3 +566,111 @@ header #header{
 #blog .icons{
 }
 /*BLOGS SECTION ENDS*/
+
+/*GET IN TOUCH SECTION STARTS*/
+#getInTouch{
+    padding: 3rem 0 5rem 0;
+    background-color: var(--dark);
+    color: var(--white);
+}
+#getInTouch .serviceTitle{
+    font-size: 1rem;
+    font-style: italic;
+}
+#getInTouch .serviceDescription{
+    opacity: 1;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+}
+/*GET IN TOUCH SECTION ENDS*/
+
+/*CONTACT SECTION STARTS*/
+#contact{
+    background-color: var(--light);
+    padding: 2rem 0 5rem 0;
+}
+#contact h1.sectionTitle{
+    color: var(--themeDark);
+}
+#contact form{
+    background-color: var(--white);
+    padding: 1rem;
+}
+#contact input,
+#contact textarea{
+    display: block;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 1rem auto;
+    background-color: var(--light);
+    border: none;
+}
+#contact textarea{
+    height: 3rem;
+}
+#contact input:hover,
+#contact textarea:hover{
+    outline: 2px solid var(--themeLight);
+}
+#contact .callToAction{
+    text-align: left;
+    margin: 0;
+    width: 40%;
+}
+#contact .buttons{
+    background-color: var(--themeLight);
+    font-size: 0.8rem;
+    margin: 0;
+}
+/*CONTACT SECTION ENDS*/
+
+/*FOOTER SECTION STARTS*/
+#footer{
+    background-color: var(--dark);
+    color: white;
+    padding: 1rem;
+}
+#footer .socialLinks{
+    padding: 3rem 0;
+}
+#footer .link{
+    margin: auto 0.7rem;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    padding-top: 1rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(0, 0, 0, 0);
+    transition: 0.4s;
+}
+#footer a{
+    color: var(--white);
+    transition: 0.4s;
+}
+#footer .link:hover a{
+    color: var(--themeLight);
+}
+#footer .link:hover{
+    border: 3px solid var(--themeLight);
+}
+/*FOOTER SECTION ENDS*/
+
+/*GO UP SECTION STARTS*/
+#goUp{
+    position: fixed;
+    z-index: 99;
+    bottom: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    padding-top: 0.8rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--themeLight);
+}
+#goUp a{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+/*GO UP SECTION ENDS*/
