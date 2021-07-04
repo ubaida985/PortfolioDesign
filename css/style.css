@@ -64,7 +64,7 @@ header #header{
     z-index: 99;
 }
 #header.scrolled{
-    background-color: var(--dark);
+    background-color: var(--themeDark);
 }
 #header #navToggle{
     display: inline-block;
@@ -85,7 +85,7 @@ header #header{
 }
 #headerNav{
     margin-top: 5rem;
-    background-color: var(--dark);
+    background-color: var(--themeDark);
     padding-bottom: 1rem;
     width: 24rem;
     height: 100vh;
@@ -93,6 +93,7 @@ header #header{
     position: absolute;
     transition: all 0.4s;
     z-index: 99;
+    position: fixed;
 }
 #headerNav a{
     transition: all 0.4s;
@@ -207,7 +208,8 @@ header #header{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.2);
     width: 1rem;
-    height: 100%;
+    margin: 4rem 0 0 0;
+    height: 85%;
     border-radius: 0.5rem;
 }
 #history .education{
@@ -674,3 +676,120 @@ header #header{
     font-size: 1.5rem;
 }
 /*GO UP SECTION ENDS*/
+
+@media screen and ( min-width:750px ){
+    #header #navToggle{
+        display: none;
+    }
+    #headerNav{
+        transform: translateX(0);
+        width: 100%;
+        height: 4rem;
+    }
+    #headerNav ul{
+        margin-left: 2rem;
+    }
+    #headerNav li{
+        display: inline-block;
+    }
+
+    #intro{
+        height: 80vh;
+    }
+    #intro p{
+        top: 13rem;
+        margin-bottom: 14rem;
+    }
+    #intro .callToAction #hire,
+    #intro .callToAction #resume{
+        display: inline-block;
+        width: 10rem;
+    }
+    #aboutMe .service,
+    .experience,
+    .skill, .project, .fact{
+        display: inline-block;
+        width: 45%;
+        margin: 1%;
+    }
+    
+#history .experience::before{
+    margin: 6rem 0 0 0;
+    height: 85%;
+    border-radius: 0.5rem;
+}
+    .technical .icon:before{
+        width: 45%;
+    }
+
+    #testimonials .testimonial{
+        margin: 6rem auto;
+        width: 20rem;
+    }
+
+    #blog .blog,
+    #getInTouch .service{
+        display: inline-block;
+        width: 40%;
+        margin: 1rem;
+    }
+    #contact form{
+        width: 35rem;
+        margin:auto;
+    }
+}
+
+
+@media screen and ( min-width:950px ){
+    /* header #header{
+        display: inline-block;
+        width: 25%;
+    }
+    header #logo{
+        display: inline-block;
+        width: 100%;
+    }
+    header nav#headerNav{
+        display: inline-block;
+        width: 70%;
+    } */
+    .container{
+        width: 80%;
+    }
+    #aboutMe .imgContainer,
+    #aboutMe .sectionDescription{
+        width: 50%;
+        margin: 0 auto;
+    }
+    #aboutMe .sectionDescription{
+        padding-bottom: 2rem;
+    }
+    #aboutMe .service,
+    .skill, .project, .fact{
+        width: 25%;
+    }
+    .technical .icon:before{
+        width: 25%;
+    }
+
+    #testimonials .testimonial{
+        margin: 6rem 1rem;
+        width: 20rem;
+        display: inline-block;
+    }
+
+    #blog .blog,
+    #getInTouch .service{
+        display: inline-block;
+        width: 30%;
+        margin: 1rem;
+    }
+    #blog .interactions{
+        padding: 0.5rem 0.2rem;
+        background-color: var(--light);
+    }
+    #contact form{
+        width: 35rem;
+        margin:auto;
+    }
+}
